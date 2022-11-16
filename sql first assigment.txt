@@ -1,0 +1,93 @@
+-- Name: Rehman Ali
+-- Student ID: 1362252
+-- Time Taken: 2 hours
+-- Help: NO
+
+
+-- create table for employee with the following attributes
+-- ID, first_name, last_name, age, gender, contact, address,
+-- salary, department, Date of joining (YYYY-MM_DD)
+
+
+-- insert 12 employees
+-- 3 from IT department
+-- 4 from Faculty
+-- 1 from HR
+-- 4 from Management
+
+
+-- Q1: There is an upcoming picnic for women. Write a query that returns all the female staff
+-- A1:  (`Id`, `First Name`, `Last Name`, `Age`, `Gender`, `Contact`, `Address`, `Salary`, `Department`, `Date of joining`)
+	 (8, 'Amna', 'Mumtaz', 20, 'Female', '03345763890', 'Gulshan - e - Iqbal', 50000, 'Faculty', '2015-12-28'),
+	 (9, 'Samia', 'Qureshi', 21, 'Female', '03145763890', 'Gulshan - e - Hadid', 40000, 'Managment', '2017-12-28'),
+	 (10, 'Laiba', 'Qureshi', 22, 'Female', '03125763890', 'Gulshan - e - Hadid', 55000, 'Managment', '2011-12-28'),
+	 (11, 'Ayesha', 'Qureshi', 22, 'Female', '03175763890', 'Gulshan - e - Iqbal', 45000, 'Managment', '2019-12-28');
+
+
+-- Q2(a): write a query which returns the 3 most earning employees.
+-- A2(a): (1, 'Rehman', 'Ali', 20, 'Male', '2147483647', 'House No # L591 korangi karachi', 55000, 'IT', '2020-12-31'),
+	  (4, 'Rehan', 'Ali', 20, 'Male', '03243453565', 'karachi', 80000, 'HR', '2018-11-25'),
+	  (8, 'Amna', 'Mumtaz', 20, 'Female', '03345763890', 'Gulshan - e - Iqbal', 60000, 'Faculty', '2015-12-28'),
+	  (10, 'Laiba', 'Qureshi', 22, 'Female', '03125763890', 'Gulshan - e - Hadid', 55000, 'Managment', '2011-12-28');
+
+
+
+-- Q2(b): write a query which returns the 2 most earning female employees. 
+-- (THE RESULT SET SHOULD ONLY SHOW THE EMPLOYEE'S ID, First Name, Last Name, Salary, Department)
+-- A2(b): (8, 'Amna', 'Mumtaz', 63500, 'Faculty'),
+	  (10, 'Laiba', 'Qureshi', 65000, 'Managment');
+
+
+-- Q3(a): Congratulations 🎉 Your company has made a profit. 
+-- Write a query that increases every employee's salary by 2500
+-- A3(a): (1, 'Rehman', 'Ali', 20, 'Male', '2147483647', 'House No # L591 korangi karachi', 57500, 'IT', '2020-12-31'),
+	  (2, 'Wajahat', 'Ali', 20, 'Male', '03343714675', 'korangi karachi', 47500, 'IT', '2019-12-26'),
+	  (3, 'Aqeel', 'Ali', 20, 'Male', '03343453565', 'karachi', 42500, 'IT', '2020-11-12'),
+	  (4, 'Rehan', 'Ali', 20, 'Male', '03243453565', 'karachi', 82500, 'HR', '2018-11-25'),
+	  (5, 'Maaz', 'Ali', 20, 'Male', '03143453565', 'karachi', 32500, 'Faculty', '2021-12-13'),
+	  (6, 'Mujtaba', 'Ali', 20, 'Male', '03043453565', 'karachi', 27500, 'Faculty', '2022-10-26'),
+	  (7, 'Rizwan', 'Ali', 20, 'Male', '03173453565', 'karachi', 37500, 'Faculty', '2021-11-19'),
+	  (8, 'Amna', 'Mumtaz', 20, 'Female', '03345763890', 'Gulshan - e - Iqbal', 62500, 'Faculty', '2015-12-28'),
+	  (9, 'Samia', 'Qureshi', 21, 'Female', '03145763890', 'Gulshan - e - Hadid', 47500, 'Managment', '2017-12-28'),
+	  (10, 'Laiba', 'Qureshi', 22, 'Female', '03125763890', 'Gulshan - e - Hadid', 57500, 'Managment', '2011-12-28'),
+	  (11, 'Ayesha', 'Qureshi', 22, 'Female', '03175763890', 'Gulshan - e - Iqbal', 37500, 'Managment', '2019-12-28'),
+	  (12, 'Fareeha', 'Fari', 25, 'Female', '03343898345', 'Karachi', 52500, 'Managment', '2020-12-27');
+
+
+
+-- Q3(b): The Board is very happy with the management's performance and would like to give them an additional raise. 
+-- Write a query that increases all employees within management's salary by 5%
+-- A3(b): (9, 'Samia', 'Qureshi', 21, 'Female', '03145763890', 'Gulshan - e - Hadid', 57500, 'Managment', '2017-12-28'),
+	  (10, 'Laiba', 'Qureshi', 22, 'Female', '03125763890', 'Gulshan - e - Hadid', 65000, 'Managment', '2011-12-28'),
+	  (11, 'Ayesha', 'Qureshi', 22, 'Female', '03175763890', 'Gulshan - e - Iqbal', 45000, 'Managment', '2019-12-28'),
+	  (12, 'Fareeha', 'Fari', 25, 'Female', '03343898345', 'Karachi', 60000, 'Managment', '2020-12-27');
+
+-- Q4: Write a query that returns the oldest working employee. The result set should only return 1 record.
+
+
+-- Q5: A van service has been started by the company for female staff 
+-- living in gulshan-e-Iqbal 13-E or Gulshan-e-Hadid
+
+-- A5:  (8, 'Amna', 'Mumtaz', 20, 'Female', '03345763890', 'Gulshan - e - Iqbal', 62500, 'Faculty', '2015-12-28'),
+	(9, 'Samia', 'Qureshi', 21, 'Female', '03145763890', 'Gulshan - e - Hadid', 47500, 'Managment', '2017-12-28'),
+	(10, 'Laiba', 'Qureshi', 22, 'Female', '03125763890', 'Gulshan - e - Hadid', 57500, 'Managment', '2011-12-28'),
+	(11, 'Ayesha', 'Qureshi', 22, 'Female', '03175763890', 'Gulshan - e - Iqbal', 37500, 'Managment', '2019-12-28'),
+	(12, 'Fareeha', 'Fari', 25, 'Female', '03343898345', 'Karachi', 52500, 'Managment', '2020-12-27');
+
+-- Write a query that returns a result set that meets the above requirement
+-- A: (10, 'Laiba', 'Qureshi', 22, 'Female', '03125763890', 'Gulshan - e - Hadid', 65000, 'Managment', '2011-12-28');
+
+
+-- Q6: Write a query that increases the salary of all employees by 1000 except employees from management.
+-- A6: 	(1, 'Rehman', 'Ali', 20, 'Male', '2147483647', 'House No # L591 korangi karachi', 58500, 'IT', '2020-12-31'),
+	(2, 'Wajahat', 'Ali', 20, 'Male', '03343714675', 'korangi karachi', 48500, 'IT', '2019-12-26'),
+	(3, 'Aqeel', 'Ali', 20, 'Male', '03343453565', 'karachi', 43500, 'IT', '2020-11-12'),
+	(4, 'Rehan', 'Ali', 20, 'Male', '03243453565', 'karachi', 83500, 'HR', '2018-11-25'),
+	(5, 'Maaz', 'Ali', 20, 'Male', '03143453565', 'karachi', 33500, 'Faculty', '2021-12-13'),
+	(6, 'Mujtaba', 'Ali', 20, 'Male', '03043453565', 'karachi', 28500, 'Faculty', '2022-10-26'),
+	(7, 'Rizwan', 'Ali', 20, 'Male', '03173453565', 'karachi', 38500, 'Faculty', '2021-11-19'),
+	(8, 'Amna', 'Mumtaz', 20, 'Female', '03345763890', 'Gulshan - e - Iqbal', 63500, 'Faculty', '2015-12-28'),
+	(9, 'Samia', 'Qureshi', 21, 'Female', '03145763890', 'Gulshan - e - Hadid', 57500, 'Managment', '2017-12-28'),
+	(10, 'Laiba', 'Qureshi', 22, 'Female', '03125763890', 'Gulshan - e - Hadid', 65000, 'Managment', '2011-12-28'),
+	(11, 'Ayesha', 'Qureshi', 22, 'Female', '03175763890', 'Gulshan - e - Iqbal', 45000, 'Managment', '2019-12-28'),
+	(12, 'Fareeha', 'Fari', 25, 'Female', '03343898345', 'Karachi', 60000, 'Managment', '2020-12-27');
