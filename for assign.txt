@@ -1,0 +1,13 @@
+DELIMITER //
+CREATE TRIGGER insert_total_marks
+BEFORE INSERT
+on students
+FOR EACH ROW
+BEGIN
+
+DECLARE total int;
+set total = new.Sub1 + new.Sub2;
+set new.Total_marks = total;
+
+
+END//
